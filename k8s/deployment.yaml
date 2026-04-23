@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app
-  labels:
-    app: my-app
+  name: nginx-demo
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: my-app
+      app: nginx-demo
   template:
     metadata:
       labels:
-        app: my-app
+        app: nginx-demo
     spec:
       containers:
-      - name: my-app
-        image: your-dockerhub-username/my-app:build-1
+      - name: nginx
+        image: ajanasokan/nginx-demo:1
         ports:
-        - containerPort: 3000
+        - containerPort: 80
