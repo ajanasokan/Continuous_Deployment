@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: nginx:latest   # 👉 replace with your Docker image
+        image: ajanasokan/akash_nginx:tagname   # 👉 replace with your Docker image
         ports:
         - containerPort: 80
