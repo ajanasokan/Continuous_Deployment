@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-cd
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app-cd
+  template:
+    metadata:
+      labels:
+        app: my-app-cd
+    spec:
+      containers:
+      - name: my-app-cd
+        image: ajanasokan/nginx-demo:build_number_1   # Jenkins will update this
+        ports:
+        - containerPort: 80
