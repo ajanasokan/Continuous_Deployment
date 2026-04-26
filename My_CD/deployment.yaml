@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-app-cd
-        image: ajanasokan/nginx-demo:build_number_1   # Jenkins will update this
+        image: ajanasokan/tried_so_hard:build_number_13
         ports:
         - containerPort: 80
