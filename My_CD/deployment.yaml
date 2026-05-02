@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: my-app-cd
-        image: ajanasokan/tried_so_hard:build_number_15
+        image: ajanasokan/akash_testt:build_number_16
         ports:
         - containerPort: 80
